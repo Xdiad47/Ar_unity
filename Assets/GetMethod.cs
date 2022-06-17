@@ -34,6 +34,7 @@ public class GetMethod : MonoBehaviour
     IEnumerator GetData_Coroutine()
     {
         outputArea.text = "Loading...";
+        //Change the link here
         string uri = "https://prod.wikibedtimestories.com/webservices/ARIES/api/test_get_All_Equity_Details.php?country=US";
         using (UnityWebRequest request = UnityWebRequest.Get(uri))
         {
